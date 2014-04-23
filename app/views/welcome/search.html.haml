@@ -1,0 +1,257 @@
+#content_block
+  #content_left
+    %form#form_search{ action: "#", method: "post" }
+      %legend Поиск предложений:
+      %fieldset
+        .min_input_1
+          %p
+            %label{ for: "region" }
+              Регион
+              %br/
+              %input#region{ name: "region", type: "text", placeholder: "Ввести или выбрать из списка", required: "true" }
+        .min_input_2
+          %p
+            %label{ for: "poroda" }
+              Порода
+              %br/
+              %input#poroda{ name: "poroda", type: "text", placeholder: "Выбрать из списка", required: "true" }
+        .min_input_1
+          %p
+            %label{ for: "polov" }
+              Половозрастная группа (ПВГ)
+              %br/
+              %input#polov{ name: "polov", type: "text", placeholder: "Выбрать из списка", required: "true" }
+        .min_input_2
+          %p
+            %label{ for: "pch" }
+              Наличие племён. статуса хозяйства:
+              %br/
+              %input{ name: "pch", type: "radio", checked: "checked" }
+              %span да
+              %input{ name: "pch", type: "radio" }
+              %span нет
+              %input{ name: "pch", type: "radio" }
+              %span не важно
+        .min_input_1
+          %p.radio_vybor
+            %label{ for: "dost" }
+              %span.radio_vybor Доставка:
+              %input{ name: "dost", type: "radio", checked: "checked" }
+              %span есть
+              %input{ name: "dost", type: "radio" }
+              %span нету
+        .min_input_2
+          %p.radio_vybor
+            %label{ for: "nds" }
+              %span.radio_vybor Цена:
+              %input{ name: "nds", type: "radio", checked: "checked" }
+              %span с НДС
+              %input{ name: "nds", type: "radio" }
+              %span без НДС
+      %p.butt_search
+        Найдено 20 результатов:
+        %button{ type: "submit", class: "pokazat", role: "button", "aria-disabled" => "false" } Показать
+
+    .clear_div
+    %h2.head_line Предложения по скоту
+    %table.predlog_skot
+      %thead
+        %tr
+          %th{ width: "82px" } Фото
+          %th{ width: "96px" } Регион
+          %th{ width: "96px" } Порода
+          %th{ width: "80px" } ПВГ
+          %th{ width: "68px" } Возраст
+          %th{ width: "68px" } Кол-во
+          %th{ width: "96px" } Цена за кг.
+          %th{ width: "86px" } 
+            %span 
+              Рейтинг
+              %br/
+              продавца
+      %tbody
+        %tr.sort
+          %td
+            %button{ type: "submit", role: "button", class: "strelka active" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+          %td
+            %button{ type: "submit", role: "button", class: "strelka" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+          %td
+            %button{ type: "submit", role: "button", class: "strelka" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+          %td
+            %button{ type: "submit", role: "button", class: "strelka" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+          %td
+            %button{ type: "submit", role: "button", class: "strelka" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+          %td
+            %button{ type: "submit", role: "button", class: "strelka" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+          %td
+            %button{ type: "submit", role: "button", class: "strelka" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+          %td
+            %button{ type: "submit", role: "button", class: "strelka" } &darr;
+            %button{ type: "submit", role: "button", class: "strelka" } &uarr;
+        %tr.svetl
+          %td
+            = image_tag( 'korovka_1.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 9 мес.
+          %td 10
+          %td 100 руб.
+          %td
+            0/5
+            %br/
+            (голосов: 0)
+        %tr.temn
+          %td
+            = image_tag( 'korovka_2.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Телки
+          %td 15 мес.
+          %td 50
+          %td 70 руб.
+          %td
+            4/5
+            %br/
+            (голосов: 1)
+        %tr.svetl
+          %td
+            = image_tag( 'foto_net.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 7 мес.
+          %td 1
+          %td По договорен.
+          %td
+            0/5
+            %br/
+            (голосов: 0)
+        %tr.temn
+          %td
+            = image_tag( 'foto_net.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 15 мес.
+          %td 100
+          %td 50 руб.
+          %td
+            3/5
+            %br/
+            (голосов: 4)
+        %tr.svetl
+          %td
+            = image_tag( 'foto_net.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 15 мес.
+          %td 100
+          %td 50 руб.
+          %td
+            3/5
+            %br/
+            (голосов: 4)
+        %tr.temn
+          %td
+            = image_tag( 'korovka_1.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 9 мес.
+          %td 10
+          %td 100 руб.
+          %td
+            0/5
+            %br/
+            (голосов: 0)
+        %tr.svetl
+          %td
+            = image_tag( 'korovka_2.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Телки
+          %td 15 мес.
+          %td 50
+          %td 70 руб.
+          %td
+            4/5
+            %br/
+            (голосов: 1)
+        %tr.temn
+          %td
+            = image_tag( 'foto_net.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 7 мес.
+          %td 1
+          %td По договорен.
+          %td
+            0/5
+            %br/
+            (голосов: 0)
+        %tr.svetl
+          %td
+            = image_tag( 'foto_net.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 15 мес.
+          %td 100
+          %td 50 руб.
+          %td
+            3/5
+            %br/
+            (голосов: 4)
+        %tr.temn
+          %td
+            = image_tag( 'foto_net.png' )
+          %td Кабардино-балкария
+          %td Голштинская
+          %td Нетель
+          %td 15 мес.
+          %td 100
+          %td 50 руб.
+          %td
+            3/5
+            %br/
+            (голосов: 4)
+      
+    %ul.pagi
+      %li.active
+        = link_to '1', '#'
+      %li
+        = link_to '2', '#'
+      %li
+        = link_to '3', '#'
+      %li
+        = link_to '4', '#'
+      %li
+        = link_to '5', '#'
+      %li
+        = link_to '6', '#'
+      %li
+        = link_to '7', '#'
+      %li
+        = link_to '8', '#'
+      %li
+        = link_to '9', '#'
+      %li
+        = link_to '>>', '#'
+
+    .clear_div
+
+  #content_right
+    = image_tag( 'reklama240-400.png' )
+    = image_tag( 'reklama240-400.png', class: 'reklama240-400' )
+
+  .clear_div

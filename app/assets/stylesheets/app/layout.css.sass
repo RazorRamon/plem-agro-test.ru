@@ -1,0 +1,296 @@
+/* Verstal: V V P */
+/* -------------- */
+
+*
+  +box-sizing(border-box)
+
+html, body
+  height: 100%
+
+#wrapper
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto -111px
+  width: 100%
+  min-width: 980px
+  +filter-gradient(#989274, #eeefdd)
+  +background(linear-gradient(#989274, #eeefdd))
+
+#footer
+  height: 111px
+
+#push
+  height: 100px
+
+.cf
+  +pie-clearfix
+
+img
+  border: none
+  vertical-align: top
+
+input, textarea
+  outline: none
+  +placeholder
+
+.inline-block
+  +inline-block
+
+.left
+  float: left
+.right
+  float: right
+
+a, input, input:active, input:focus, textarea, textarea:active, textarea:focus
+  outline: 0!important
+  outline-style: none!important
+  outline-width: 0!important
+
+\button::-moz-focus-inner 
+
+
+/* ------ */
+/* HEADER */
+/* ------ */
+
+#header
+  width: 960px
+  height: 205px
+  margin: auto
+  +clearfix
+
+  &:before
+    position: absolute
+    background-color: #782a41
+    height: 6px
+    top: 0px
+    left: 0px
+    right: 0px
+    content: ''
+
+  .logo
+    background: image-url('logo.png') 0px 0px no-repeat
+    width: 165px
+    height: 182px
+    padding-top: 112px
+    margin-top: 15px
+    float: left
+    padding-left: 13px
+
+  .urlname
+    width: 137px
+    height: 27px
+    line-height: 20pt
+    font-family: "Play"
+    font-size: 18px
+    color: #dc6445
+    text-align: center
+    +border-radius(4px)
+    background-color: #ffffff
+
+  .urlname span
+    font-family: "PlayBold"
+    font-size: 18px
+    color: #dc6445
+
+  .head_text
+    width: 540px
+    padding-left: 20px
+    margin-top: 18px
+    height: 182px
+    float: left
+
+    h1
+      font-family: "BanderaPro", Tahoma
+      font-size: 25px
+      color: #4c493a
+      font-weight: 500
+      line-height: 22px
+      margin-bottom: -1px
+
+    h2
+      font-family: "BanderaPro", Tahoma
+      font-size: 20px
+      color: #fff
+      font-weight: 500
+      line-height: 22px
+      margin-bottom: -5px
+
+    p
+      font-family: "BanderaProMedium", Tahoma
+      font-size: 13px
+      color: #e7e3d0
+      line-height: 15px
+
+  .head_cont
+    position: relative
+    width: 235px
+    height: 110px
+    +border-radius(0 0 10px 10px)
+    background-color: #782a41
+    float: left
+
+    p
+      text-align: center
+      font-family: "Trebuchet MS"
+      font-size: 14px
+      color: #b47a8b
+      line-height: 25px
+
+    span
+      text-align: center
+      font-family: "Trebuchet MS"
+      font-size: 19px
+      color: #e2cdd3
+
+    &:before
+      position: absolute
+      background: image-url('head_ugol_left.png') 0px 6px no-repeat
+      width: 10px
+      height: 16px
+      top: 0
+      left: -10px
+      content: ''
+
+    &:after
+      position: absolute
+      background: image-url('head_ugol_right.png') 0px 6px no-repeat
+      width: 10px
+      height: 16px
+      top: 0
+      right: -10px
+      content: ''
+
+  .head_user
+    position: absolute
+    margin-left: -25px
+    margin-top: 45px
+
+/* --------- */
+/* MENU_VERH */
+/* --------- */
+
+#verh_menu
+  width: 1004px
+  height: 52px
+  +filter-gradient(#983653, #792a41)
+  +background(linear-gradient(#983653, #792a41))
+  margin: auto
+  text-align: center
+
+  &:before
+    position: absolute
+    background: image-url('nad-menu.png') 0px 0px no-repeat
+    height: 17px
+    width: 980px
+    top: 188px
+    left: 0px
+    right: 0px
+    margin: auto
+    content: ''
+
+  ul.v_menu
+    width: 980px
+    margin: auto
+    list-style: none
+    padding: 0px
+    text-align: center
+
+    li
+      +inline-block(top)
+      padding-left: 20px
+      padding-right: 20px
+
+      &:hover
+        +filter-gradient(#7e2d45, #652437)
+        +background(linear-gradient(#7e2d45, #652437))
+
+      &.active
+        +filter-gradient(#7e2d45, #652437)
+        +background(linear-gradient(#7e2d45, #652437))
+        font-weight: bold
+
+    a
+      display: block
+      height: 52px
+      line-height: 52px
+      font-family: Tahoma
+      font-size: 14px
+      color: #fff
+      text-decoration: none
+      text-transform: uppercase
+
+    a:hover
+      text-decoration: none
+
+/* ------- */
+/* CONTENT */
+/* ------- */
+
+#content_block
+  width: 980px
+  margin: auto
+  background-color: #ebeade
+  background: image-url('podlojka-punkt.png')
+  padding: 20px
+  padding-bottom: 50px
+  margin-bottom: -7px
+  position: relative
+  
+  &:before
+    position: absolute
+    background: image-url('ugol_pod_menu_left.png') 0px 0px no-repeat
+    width: 13px
+    height: 13px
+    top: 0px
+    content: ''
+    left: -13px
+
+  &:after
+    position: absolute
+    background: image-url('ugol_pod_menu_right.png') 0px 0px no-repeat
+    width: 13px
+    height: 13px
+    top: 0px
+    content: ''
+    right: -13px
+
+/* ------ */
+/* FOOTER */
+/* ------ */
+
+#footer
+  margin-top: -30px
+  width: 980px
+  height: 111px
+  margin: auto
+  background: image-url('footer.png') 0 0 no-repeat
+  padding: 20px
+  position: relative
+
+  .copyright
+    float: left
+    font-family: "Trebuchet MS"
+    font-size: 13px
+    color: #443b2e
+    font-weight: bold
+    margin-top: 30px
+    margin-left: 15px
+    margin-right: 80px
+
+  .footer1, .footer2
+    float: left
+    width: 150px
+    margin-right: 25px
+
+  .footer1 a, .footer2 a, .footer3 a
+    font-family: "Trebuchet MS"
+    font-size: 12px
+    color: #fff
+    line-height: 24px
+    font-weight: normal
+    text-decoration: underline
+	
+#form_search
+  border-bottom: 1px dashed #cbcabd

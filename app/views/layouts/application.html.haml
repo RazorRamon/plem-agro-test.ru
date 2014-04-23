@@ -1,0 +1,12 @@
+!!! 5
+%html{ html_attrs( 'ru-ru' ) }
+  %head
+    = render 'shared/head'
+
+  %body
+    #wrapper.cf
+      = render 'shared/header'
+      = yield
+      .cf
+      #push
+    = render 'shared/footer'

@@ -1,0 +1,21 @@
+=placeholder-default-style
+  color: #b6b6b6
+  font-size: 14px
+  font-family: "Trebuchet MS"
+
+=placeholder
+  &.placeholder
+    +placeholder-default-style
+    @content
+  &::-moz-placeholder
+    +placeholder-default-style
+    @content
+  &:-moz-placeholder
+    +placeholder-default-style
+    @content
+  &::-webkit-input-placeholder
+    +placeholder-default-style
+    @content
+  &:-ms-input-placeholder
+    +placeholder-default-style
+    @content

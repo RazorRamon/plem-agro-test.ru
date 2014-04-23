@@ -1,0 +1,97 @@
+#content_block
+  #content_left
+    .breadcrumb Поиск предложений
+    .nav
+      &larr;
+      = link_to 'Назад', '#'
+    .clear_div
+    %ul.zakladki
+      %li Визитка продавца
+      %li.mini_li_text
+        Все объявления
+        %br/
+        продавца
+        %span (2)
+      %li Отзывы
+      %li Добавить в избранное
+    .clear_div
+    .nomer_zakaza № 12345 от 19.10.2013
+    .count_pokazov
+      Количество просмотров за сегодня:
+      %span 5
+      &nbsp;&nbsp;&nbsp; за всё время:
+      %span 30
+    .clear_div
+    .block_image
+      = image_tag( 'advert-big.png', class: 'image_advert_big' )
+      = image_tag( 'advert-mini.png', class: 'image_advert_mini' )
+      = image_tag( 'advert-mini.png', class: 'image_advert_mini' )
+      = image_tag( 'advert-mini.png', class: 'image_advert_mini' )
+      = image_tag( 'advert-mini.png', class: 'image_advert_mini' )
+      = image_tag( 'advert-mini.png', class: 'image_advert_mini' )
+    .right_anketa
+      .stroka_tseny
+        .tsena 100
+        .valuta руб/кг (с учётом НДС)
+      .stroka_ankety
+        .left_stroka
+          %b Порода
+        .right_stroka Голштинская
+      .stroka_ankety
+        .left_stroka
+          %b ПВГ:
+        .right_stroka Нетель
+      .stroka_ankety
+        .left_stroka
+          %b Кол-во:
+        .right_stroka 100 голов
+      .stroka_ankety
+        .left_stroka
+          %b Возраст:
+        .right_stroka 9 мес.
+      .stroka_ankety
+        .left_stroka Стельность:
+        .right_stroka -
+      .stroka_ankety
+        .left_stroka Удои:
+        .right_stroka -
+      .stroka_ankety.top_otstup
+        .left_stroka Контактное лицо:
+        .right_stroka Василий
+      .stroka_ankety.height_long
+        .left_stroka
+          Телефон:
+          %i раб.
+        .right_stroka
+          %b 8(498) 745-45-45
+        .left_stroka
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          %i моб.
+        .right_stroka
+          %b 8(910) 555-10-55
+      .stroka_ankety.height_small
+        .left_stroka Эл.почта/e-mail:
+        .right_stroka
+          = link_to 'info@mail.ru', '#'
+      .stroka_ankety.height_small
+        .left_stroka Регион:
+        .right_stroka Московский р-н
+      .stroka_ankety.height_small
+        .left_stroka Адрес:
+        .right_stroka не указано
+    .autor_advert
+      Автор объявления:
+      %br/
+      = link_to 'ЗАО "Славянское"', '#'
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Рейтинг
+      %span 4/5
+    .clear_div
+    .opisanie_advert
+      %h3 Описание:
+      %p Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.
+
+  #content_right
+    = image_tag( 'reklama240-400.png' )
+    = image_tag( 'reklama240-400.png', class: 'reklama240-400' )
+
+  .clear_div

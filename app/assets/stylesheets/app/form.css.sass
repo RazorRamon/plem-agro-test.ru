@@ -1,0 +1,152 @@
+// формы на сайте
+.input
+  margin-bottom: 5px
+
+label
+  display: block
+  color: #363532
+  font-size: 15px
+  font-family: "Trebuchet MS"
+  font-weight: bold
+  margin-top: 5px
+
+input, textarea
+  +placeholder
+    color: #cbc9b9
+    font-size: 14px
+    font-family: "Trebuchet MS"
+    font-style: italic
+
+input
+  border: 1px solid #d2d0c6
+  +border-radius(6px)
+  background-color: #ffffff
+  height: 38px
+  padding: 7px
+  color: #363532
+  font-size: 15px
+  font-family: "Trebuchet MS"
+  margin-top: 5px
+
+input[type='text']
+  width: 284px
+
+input[type='radio']
+  float: left
+  margin-right: 5px
+  height: 22px
+  width: 22px
+  cursor: pointer
+  margin-top: 12px
+  margin-right: 5px
+
+.jq-radio
+  background: image-url('chekb.png')
+  float: left
+  margin-right: 5px
+  height: 22px
+  width: 22px
+  cursor: pointer
+  margin-top: 12px
+  margin-right: 5px
+  border: none !important
+  +border-radius(0px)
+  +box-shadow(none)
+  &.checked
+    background: image-url('chekb-select.png')
+    +box-shadow(none)
+    div
+      display: none
+
+input[type='checkbox']
+  float: left
+  margin-right: 5px
+  height: 22px
+  width: 22px
+  cursor: pointer
+  margin-top: 0px
+  margin-right: 5px
+
+.jq-checkbox
+  background: image-url('chekb.png')
+  height: 22px
+  width: 22px
+  border: none !important
+  margin-top: 0px
+  margin-right: 5px
+  +box-shadow( none )
+  &.checked
+    background: image-url('chekb-select.png')
+    +box-shadow( none )
+    div
+      display: none
+
+select
+  width: 284px
+
+.jq-selectbox
+  margin-top: 5px
+
+.jq-selectbox__select
+  box-shadow: none
+  height: 38px
+  border: 1px solid #d2d0c6
+  background: #FDFDFC
+  +border-radius(6px)
+  +background(linear-gradient(to bottom, #FDFDFC 0%,#FDFDFC 50%,#F3F3EF 51%,#F3F3EF 100%))
+  &:active
+    box-shadow: none
+  &:hover
+    background: #FDFDFC
+    +background(linear-gradient(to bottom, #FDFDFC 0%,#FDFDFC 50%,#F3F3EF 51%,#F3F3EF 100%))
+  .jq-selectbox__select-text
+    font-size: 15px
+    font-family: "Trebuchet MS"
+    line-height: 36px
+    +text-shadow(none)
+    color: #716F66
+  .jq-selectbox__trigger
+    border-left: none
+  .jq-selectbox__trigger-arrow
+    width: 4px
+    height: 8px
+    top: 15px
+    border: none
+    background: image-url("arrow-select-trigger.png") no-repeat
+    +opacity(1)
+.jq-selectbox__dropdown
+  border: 1px solid #d2d0c6
+  box-shadow: none
+  max-height: 168px
+  +border-radius(0px 0px 6px 6px)
+  li
+    font-family: "Trebuchet MS"
+    color: #5A5A5A
+    font-family: 14px
+
+textarea
+  width: 100%
+  height: 98px
+  resize: none
+  border: 1px solid #d2d0c6
+  +border-radius(6px)
+  background-color: #ffffff
+  padding: 5px
+  color: #363532
+  font-size: 15px
+  font-family: "Trebuchet MS"
+  margin-top: 5px
+
+.form_punktir_line
+  border-top: 1px dashed #c8c7be
+  border-bottom: none
+  margin-top: 20px
+  margin-bottom: 15px
+  width: auto
+  
+.form_splosh_line
+  border-top: 1px solid #c8c7be
+  border-bottom: none
+  margin-top: 40px
+  width: 250px
+  margin: auto

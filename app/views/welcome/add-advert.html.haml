@@ -1,0 +1,156 @@
+#content_block.add-advert
+  #content_left
+    .hint
+      %h2 Уважаемые господа!
+      %p
+        На сайте представлены объявления только проверенных пользователей. Для того чтобы оставить объявление, необходимо пройти полную регистрацию (заполнение Шага 1, Визитка Вашего предприятия). Если Вы зарегистрированы, то сначала нужно
+        = link_to 'войти', '#'
+        в систему сайта.
+        %br/
+        На сайте подача объявлений является БЕСПЛАТНОЙ до 01.01.2014 г.
+    .reg_add_shagi
+      .shag_1
+        %span
+          ШАГ 1.
+        Регистрация на сайте
+      .shag_2.active
+        %span
+          ШАГ 2.
+        Подача объявления
+      .clear_div
+    %form#form-add-advert{ action: "#", method: "post" }
+      %legend Подать объявление:
+      .select-type-ad
+        %button.btn-main.btn-gray.sale-livestock{type: "submit"} Продажа скота
+        %button.btn-main.btn-blue.pay-livestock{type: "submit"} Покупка скота
+      .form-inputs
+        .cf
+          .left
+            .input
+              %label Порода
+              %select
+                %option Выбрать
+                %option Московская борзая
+                %option Питерская спокойная
+                %option Московская борзая
+                %option Питерская спокойная
+                %option Московская борзая
+                %option Питерская спокойная
+            .input
+              %label Количество голов
+              %input{type: "text"}
+            .input
+              %label Стельность
+              %input{type: "text"}
+          .right
+            .input
+              %label Половозрастная группа(ПВГ)
+              %input{type: "text", placeholder: "Бычки; Нетели; Корова; Телки"}
+            .input
+              %label Возраст (месяцев)
+              %input{type: "text"}
+            .input
+              %label Удои
+              %input{type: "text"}
+        .input
+          %label Описание
+          %textarea
+        %hr.form_punktir_line
+        .cf
+          .input
+            %label Стоимость
+            %input#stoim{ name: "stoim", type: "text", required: "true" }
+            руб., кг
+            %input#nds2{ name: "nds2", type: "text", required: "true" }
+            руб., голова
+        .min_input_1
+          %p.radio_vybor
+            %label{ for: "nds3" }
+              %span.radio_vybor Цена:
+              %input{ name: "nds3", type: "radio", checked: "checked" }
+              %span с учётом НДС
+              %input{ name: "nds3", type: "radio" }
+              %span без НДС
+        .min_input_2
+          %p.radio_vybor
+            %label{ for: "dost2" }
+              %span.radio_vybor Наличие доставки:
+              %input{ name: "dost2", type: "radio", checked: "checked" }
+              %span Есть
+              %input{ name: "dost2", type: "radio" }
+              %span Нету
+        .clear_div
+        %hr.form_splosh_line
+        %p.checb2
+          %input{ name: "soglas4", type: "checkbox", checked: "checked" }
+          По договорённости
+        %hr.form_punktir_line
+        %p
+          %span.radio_vybor Фотографии&nbsp;
+          %button.btn-gray2.obzor{type: "submit"} Обзор...
+        .block_image2
+          = image_tag( 'add_advert.png', class: 'image_add_advert' )
+          %br/
+          = link_to 'Удалить', '#', { class: 'del' }
+        .block_image2
+          = image_tag( 'add_advert.png', class: 'image_add_advert' )
+          %br/
+          = link_to 'Удалить', '#', { class: 'del' }
+        .clear_div
+        %hr.form_punktir_line
+
+        %p.input_blok Адрес
+        .cf
+          .left
+            .input
+              %label.tonk Регион
+              %select
+                %option Выбрать
+                %option Московская обл.
+                %option Орловская обл.
+                %option Ярославская обл.
+                %option Тверская обл.
+                %option Рязанская обл.
+                %option Тульская обл.
+                %option Калужская обл.
+                %option Смоленская обл.
+                %option Брянская обл.
+            .input
+              %label.tonk Населённый пункт
+              %input{ type: "text" }
+          .right
+            .input
+              %label.tonk Район
+              %input{ type: "text" }
+            %p.checb
+              %input{ name: "soglas5", type: "checkbox" }
+              Не указывать адрес в объявлении
+
+        %hr.form_punktir_line
+
+        %p.input_blok Контактное лицо
+        .cf
+          .left
+            .input
+              %label.tonk Телефон
+              %input{ type: "text", placeholder: "Мобильный" }
+            .input
+              %label.tonk Эл.почта / e-mail
+              %input{ type: "text" }
+          .right
+            .input
+              %label.tonk &nbsp;
+              %input{ type: "text", placeholder: "Рабочий" }
+            %p.checb
+              %input{ name: "soglas6", type: "checkbox" }
+              Не указывать e-mail в объявлении
+        %hr.form_punktir_line
+        %p.checb2
+          = link_to 'Предварительный просмотр', '#', { class: 'pred_prosmotr' }
+        %button.btn-green2.end_add_advert{ type: "submit", role: "button" } ГОТОВО
+
+  #content_right
+    = image_tag( 'reklama240-400.png' )
+    = image_tag( 'reklama240-400.png', class: 'reklama240-400' )
+
+  .clear_div

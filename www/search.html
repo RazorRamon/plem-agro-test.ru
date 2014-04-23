@@ -1,0 +1,246 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Заголовок</title>
+	<meta name="description" content="opisanie" />
+	<meta name="keywords" content="keywords" />
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/news/rss/" />
+</head>
+<body>
+	<div id="header">
+		<div class="logo">
+			<p class="urlname"><span>ПлемАгро</span>.ру</p>
+		</div>
+		<div class="head_text">
+			<h1>Добро Пожаловать!</h1>
+			<h2>Всероссийская база производителей племенного<br />и товарного крупного рогатого скота</h2>
+			<p>На этом сайте Вы можете разместить объявление о продаже КРС,<br />а также найти продавца КРС в вашем регионе и на всей территории РФ</p>
+		</div>
+		<div class="head_cont">
+			<img src="/images/head_user.png" class="head_user" />
+			<p>Служба поддержки клиентов<br /><span>(800) 555-55-55</span><br />e-mail: <span>info@site.ru</span></p> 
+		</div>
+	</div>
+	<div class="clear_div"></div>
+	<div id="verh_menu">
+		<ul class="v_menu">
+			<li class="active"><a href="">О проекте</a></li><li><a href="">Предложение по КРС</a></li><li><a href="">Новости</a></li><li><a href="">Личный кабинет</a></li><li><a href="">Контакты</a></li>
+		</ul>
+	</div>
+	<div id="content_block">
+		<div id="content_left">
+		
+			<form id="form_search" method="post" action="">
+				<legend>Поиск предложений:</legend>
+				<fieldset>
+					<div class="min_input_1">
+						<p>
+							<label for="region">Регион<br />
+								<input id="region" name="region" type="text" placeholder="Ввести или выбрать из списка" required="">
+							</label>
+						</p>
+					</div>
+					<div class="min_input_2">
+						<p>
+							<label for="poroda">Порода<br />
+								<input id="poroda" name="poroda" type="text" placeholder="Выбрать из списка" required="">
+							</label>
+						</p>
+					</div>
+					<div class="min_input_1">
+						<p>
+							<label for="polov">Половозрастная группа (ПВГ)<br />
+								<input id="polov" name="polov" type="text" placeholder="Выбрать из списка" required="">
+							</label>
+						</p>
+					</div>
+					<div class="min_input_2">
+						<p>
+							<label for="pch">Наличие племён. статуса хозяйства:<br />
+								<input type="radio" name="pch" checked="checked" /><span>да</span> <input type="radio" name="pch" /><span>нет</span> <input type="radio" name="pch" /><span>не важно</span>
+							</label>
+						</p>
+					</div>
+					<div class="min_input_1">
+						<p class="radio_vybor">
+							<label for="dost"><span class="radio_vybor">Доставка:</span>
+								<input type="radio" name="dost" checked="checked" /><span>есть</span> <input type="radio" name="dost" /><span>нету</span>
+							</label>
+						</p>
+					</div>
+					<div class="min_input_2">
+						<p class="radio_vybor">
+							<label for="nds"><span class="radio_vybor">Цена:</span>
+								<input type="radio" name="nds" checked="checked" /><span>с НДС</span> <input type="radio" name="nds" /><span>без НДС</span>
+							</label>
+						</p>
+					</div>
+				</fieldset>
+				<p class="butt_search">
+					Найдено 20 результатов:<button class="pokazat" type="submit" role="button" aria-disabled="false">Показать</button>
+				</p>
+			</form>
+			
+			<div class="clear_div"></div>
+			<h2 class="head_line">Предложения по скоту</h2>
+			<table class="predlog_skot" cellspacing="0" cellpadding="5px;">
+				<thead>
+					<tr>
+						<th width="85px;">Фото</th>
+						<th width="96px;">Регион</th>
+						<th width="96px;">Порода</th>
+						<th width="80px;">ПВГ</th>
+						<th width="68px;">Возраст</th>
+						<th width="68px;">Кол-во</th>
+						<th width="96px;">Цена за кг.</th>
+						<th width="86px;"><span>Рейтинг<br />продавца</span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="sort">
+						<td><button class="strelka active" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+						<td><button class="strelka" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+						<td><button class="strelka" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+						<td><button class="strelka" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+						<td><button class="strelka" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+						<td><button class="strelka" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+						<td><button class="strelka" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+						<td><button class="strelka" type="submit" role="button">&darr;</button><button class="strelka" type="submit" role="button">&uarr;</button></td>
+					</tr>
+					<tr class="svetl">
+						<td><img src="/images/korovka_1.png" style="width: 77px; height: 58px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>9 мес.</td>
+						<td>10</td>
+						<td>100 руб.</td>
+						<td>0/5<br />(голосов: 0)</td>
+					</tr>
+					<tr class="temn">
+						<td><img src="/images/korovka_2.png" style="width: 77px; height: 58px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Телки</td>
+						<td>15 мес.</td>
+						<td>50</td>
+						<td>70 руб.</td>
+						<td>4/5<br />(голосов: 1)</td>
+					</tr>
+					<tr class="svetl">
+						<td><img src="/images/foto_net.png" style="width: 73px; height: 59px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>7 мес.</td>
+						<td>1</td>
+						<td>По договорен.</td>
+						<td>0/5<br />(голосов: 0)</td>
+					</tr>
+					<tr class="temn">
+						<td><img src="/images/foto_net.png" style="width: 73px; height: 59px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>15 мес.</td>
+						<td>100</td>
+						<td>50 руб.</td>
+						<td>3/5<br />(голосов: 4)</td>
+					</tr>
+					<tr class="svetl">
+						<td><img src="/images/foto_net.png" style="width: 73px; height: 59px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>15 мес.</td>
+						<td>100</td>
+						<td>50 руб.</td>
+						<td>3/5<br />(голосов: 4)</td>
+					</tr>
+					<tr class="temn">
+						<td><img src="/images/korovka_1.png" style="width: 77px; height: 58px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>9 мес.</td>
+						<td>10</td>
+						<td>100 руб.</td>
+						<td>0/5<br />(голосов: 0)</td>
+					</tr>
+					<tr class="svetl">
+						<td><img src="/images/korovka_2.png" style="width: 77px; height: 58px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Телки</td>
+						<td>15 мес.</td>
+						<td>50</td>
+						<td>70 руб.</td>
+						<td>4/5<br />(голосов: 1)</td>
+					</tr>
+					<tr class="temn">
+						<td><img src="/images/foto_net.png" style="width: 73px; height: 59px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>7 мес.</td>
+						<td>1</td>
+						<td>По договорен.</td>
+						<td>0/5<br />(голосов: 0)</td>
+					</tr>
+					<tr class="svetl">
+						<td><img src="/images/foto_net.png" style="width: 73px; height: 59px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>15 мес.</td>
+						<td>100</td>
+						<td>50 руб.</td>
+						<td>3/5<br />(голосов: 4)</td>
+					</tr>
+					<tr class="temn">
+						<td><img src="/images/foto_net.png" style="width: 73px; height: 59px;"/></td>
+						<td>Кабардино-балкария</td>
+						<td>Голштинская</td>
+						<td>Нетель</td>
+						<td>15 мес.</td>
+						<td>100</td>
+						<td>50 руб.</td>
+						<td>3/5<br />(голосов: 4)</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="clear_div"></div>
+			<ul class="pagi">
+				<li class="active"><a href="">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+				<li><a href="">7</a></li>
+				<li><a href="">8</a></li>
+				<li><a href="">9</a></li>
+				<li><a href="">>></a></li>
+			</ul>
+		</div>
+		<div id="content_right">
+			<img src="/images/reklama240-400.png" />
+			<img src="/images/reklama240-400.png" style="width: 240px; height: 400px; margin: 20px 0 0px 0;"/>
+		</div>
+		<div class="clear_div"></div>
+	</div>
+	<div id="footer">
+		<p class="copyright">Сайт PlemAgro &copy; 2013 plemagro.ru - Все права защищены.</p>
+		<div class="footer1"><a href="#">На главную страницу</a><br /><a href="#">Дать объявление</a><br /><a href="#">Предложение по КРС</a></div>
+		<div class="footer2"><a href="#">О проекте</a><br /><a href="#">Правила пользования</a><br /><a href="#">Реклама на сайте</a></div>
+		<div class="footer3"><a href="#">Помощь</a><br /><a href="#">Контакты</a><br /><a href="#">Полезные ссылки</a></div>
+	</div>
+</body>
+</html>
